@@ -1,0 +1,68 @@
+{
+  "name": "es-intrinsic-cache",
+  "version": "1.0.0",
+  "description": "Get the pristine, unmodified JavaScript built-ins and cache them before anyone can tamper with them",
+  "keywords": [
+    "intrinsic",
+    "intrinsics",
+    "cache",
+    "es-abstract",
+    "javascript",
+    "ecmascript",
+    "es",
+    "js",
+    "getintrinsic"
+  ],
+  "homepage": "https://github.com/xsfj/es-intrinsic-cache#readme",
+  "bugs": {
+    "url": "https://github.com/xsfj/es-intrinsic-cache/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xsfj/es-intrinsic-cache.git"
+  },
+  "license": "MIT",
+  "author": "Fox Jones",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "types": "node tools/generate-typescript-definitions.js > index.d.ts && echo Type definitions generated.",
+    "test": "npm run types && nyc tape test/test.js",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write .",
+    "format": "biome format --write .",
+    "check": "npm run types && biome check .",
+    "check:fix": "npm run types && biome check --write .",
+    "prepublishOnly": "npm run check"
+  },
+  "dependencies": {
+    "async-function": "^1.0.0",
+    "async-generator-function": "^1.0.0",
+    "es-define-property": "^1.0.1",
+    "es-error-intrinsics": "^1.0.0",
+    "es-object-atoms": "^1.1.1",
+    "function-bind": "^1.1.2",
+    "function.apply-x": "^1.0.0",
+    "function.call-x": "^1.0.0",
+    "generator-function": "^2.0.1",
+    "get-proto": "^1.0.1",
+    "gopd": "^1.2.0",
+    "has-symbol-support-x": "^1.4.2",
+    "hasown": "^2.0.2",
+    "math-intrinsics": "^1.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.10",
+    "call-bound": "^1.0.4",
+    "es-abstract": "^1.24.1",
+    "es-value-fixtures": "^1.7.1",
+    "for-each": "^0.3.5",
+    "make-async-function": "^1.0.0",
+    "make-async-generator-function": "^1.0.0",
+    "make-generator-function": "^2.1.0",
+    "mock-property": "^1.1.0",
+    "nyc": "^17.1.0",
+    "object-inspect": "^1.13.4",
+    "tape": "^5.9.0"
+  }
+}
