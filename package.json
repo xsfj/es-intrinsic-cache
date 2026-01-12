@@ -1,6 +1,6 @@
 {
   "name": "es-intrinsic-cache",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get the pristine, unmodified JavaScript built-ins and cache them before anyone can tamper with them",
   "keywords": [
     "intrinsic",
@@ -31,8 +31,7 @@
     "lint:fix": "biome lint --write .",
     "format": "biome format --write .",
     "check": "biome check .",
-    "check:fix": "iome check --write .",
-    "prepublishOnly": "npm run check:fix"
+    "check:fix": "biome check --write ."
   },
   "dependencies": {
     "async-function": "^1.0.0",

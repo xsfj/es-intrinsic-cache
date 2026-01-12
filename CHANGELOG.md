@@ -5,9 +5,16 @@ All notable changes to `es-intrinsic-cache` will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.2] - 1/1/2/2026
+## [1.0.3] - 1/12/2026
+### Changed
+- Fixed package.json err
+- fixed changelog
+
+## [1.0.2] - 1/12/2026
 ### Changed
 - TypeScript definitions to be better
+- README.md
+- Deleted COMPARISON.md
 
 ## [1.0.1] - 12/22/2025
 
