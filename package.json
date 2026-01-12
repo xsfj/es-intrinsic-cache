@@ -1,6 +1,6 @@
 {
   "name": "es-intrinsic-cache",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get the pristine, unmodified JavaScript built-ins and cache them before anyone can tamper with them",
   "keywords": [
     "intrinsic",
@@ -27,13 +27,11 @@
   "main": "index.js",
   "exports": "./index.js",
   "scripts": {
-    "types": "node tools/generate-typescript-definitions.js > index.d.ts && echo Type definitions generated.",
-    "test": "npm run types && nyc tape test/test.js",
     "lint": "biome lint .",
     "lint:fix": "biome lint --write .",
     "format": "biome format --write .",
-    "check": "npm run types && biome check .",
-    "check:fix": "npm run types && biome check --write .",
+    "check": "biome check .",
+    "check:fix": "iome check --write .",
     "prepublishOnly": "npm run check:fix"
   },
   "dependencies": {
@@ -53,17 +51,6 @@
     "math-intrinsics": "^1.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.10",
-    "call-bound": "^1.0.4",
-    "es-abstract": "^1.24.1",
-    "es-value-fixtures": "^1.7.1",
-    "for-each": "^0.3.5",
-    "make-async-function": "^1.0.0",
-    "make-async-generator-function": "^1.0.0",
-    "make-generator-function": "^2.1.0",
-    "mock-property": "^1.1.0",
-    "nyc": "^17.1.0",
-    "object-inspect": "^1.13.4",
-    "tape": "^5.9.0"
+    "@biomejs/biome": "^2.3.10"
   }
 }

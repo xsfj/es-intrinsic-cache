@@ -184,29 +184,6 @@ function safeJSONParse(str) {
 - **Identical public API** 🔁  
   Fully compatible with `get-intrinsic`, including the same function signature, intrinsic naming syntax, legacy aliases, error handling, and edge-case protections.
 
-### Performance
-
-The performance difference is negligible in real-world usage. `es-intrinsic-cache` trades a tiny upfront initialization cost for simpler logic and slightly faster lookups, while `get-intrinsic` defers some computation until first access.
-
-### When to Choose Which
-
-**Choose `es-intrinsic-cache` if:**
-- You want complete TypeScript coverage and full IDE autocomplete
-- You value comprehensive documentation and cleaner internals
-- You prefer explicit initialization over lazy evaluation
-- You are starting new projects or libraries
-
-**Choose `get-intrinsic` if:**
-- You need the widely adopted, long-established ecosystem standard
-- You are maintaining existing code that already depends on it
-- Maximum ecosystem familiarity is your top priority
-
-📄 **Full technical comparison:**  
-See [COMPARISON.md](https://github.com/xsfj/es-intrinsic-cache/blob/main/COMPARISON.md) for an in-depth breakdown of design decisions, internal differences, and performance details.
-
-**Summary:**  
-`es-intrinsic-cache` offers the same robustness as `get-intrinsic` with improved developer experience, clearer internals, and more complete typing—while remaining a drop-in replacement.
-
 ## Contributing
 
 Contributions are welcome! Please:

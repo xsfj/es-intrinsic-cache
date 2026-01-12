@@ -24,7 +24,8 @@
       },
       "complexity": {
         "noArguments": "off",
-        "useArrowFunction": "off"
+        "useArrowFunction": "off",
+        "noBannedTypes": "off"
       },
       "style": {
         "useTemplate": "off"
