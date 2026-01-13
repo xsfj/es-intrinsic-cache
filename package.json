@@ -1,6 +1,6 @@
 {
   "name": "es-intrinsic-cache",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get the pristine, unmodified JavaScript built-ins and cache them before anyone can tamper with them",
   "keywords": [
     "intrinsic",
@@ -43,11 +43,13 @@
     "function.apply-x": "^1.0.0",
     "function.call-x": "^1.0.0",
     "generator-function": "^2.0.1",
-    "get-proto": "^1.0.1",
+    "get-proto-x": "^1.0.0",
     "gopd": "^1.2.0",
     "has-symbol-support-x": "^1.4.2",
     "hasown": "^2.0.2",
-    "math-intrinsics": "^1.1.0"
+    "math-intrinsics": "^1.1.0",
+    "object.getprototypeof-x": "^1.0.0",
+    "reflect.getprototypeof-x": "^1.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.10"

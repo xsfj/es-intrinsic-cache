@@ -69,9 +69,9 @@ var ThrowTypeError = (function () {
 
 var hasSymbols = require("has-symbol-support-x")
 
-var getProto = require("get-proto")
-var ObjectGPO = require("get-proto/Object.getPrototypeOf")
-var ReflectGPO = require("get-proto/Reflect.getPrototypeOf")
+var getProto = require("get-proto-x")
+var ObjectGPO = require("object.getprototypeof-x")
+var ReflectGPO = require("reflect.getprototypeof-x")
 
 var $apply = require("function.apply-x")
 var $call = require("function.call-x")
